@@ -1,0 +1,16 @@
+for this project database is mysql:
+
+1) database name: login_system
+2) I table: users
+3) II table: users_roles
+
+CREATE  TABLE users (
+	username VARCHAR(60) NOT NULL ,   <- need it to be 60 chars !!!
+	password VARCHAR(60) NOT NULL , 	<- need it to be 60 chars !!!
+	enabled TINYINT NOT NULL DEFAULT 1 ,
+	PRIMARY KEY (username));
+
+password for bart: 123456
+password for phoenix: 123456
+
+password is encoded with BCryptPasswordEncoder class
